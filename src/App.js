@@ -16,9 +16,9 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
           </Toolbar>
         </AppBar>
-        <Carousel>
+        <Carousel showThumbs={false} infiniteLoop={true}>
             <div>
-                <img src={logo} />
+                <img src="assets/logo.jpg"/>
                 <p className="legend">Legend 1</p>
             </div>
             <div>
