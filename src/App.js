@@ -5,6 +5,8 @@ import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
+import Profiles from './Profiles'
+
 
 class App extends Component {
   render() {
@@ -18,7 +20,7 @@ class App extends Component {
         </AppBar>
         <Carousel showThumbs={false} infiniteLoop={true}>
             <div>
-                <img src="assets/logo.jpg"/>
+                <img src={logo}/>
                 <p className="legend">Legend 1</p>
             </div>
             <div>
@@ -30,6 +32,13 @@ class App extends Component {
                 <p className="legend">Legend 3</p>
             </div>
         </Carousel>
+        <div className="main-body">
+           
+            <h1>Meet the Team</h1><br/>
+            <Profiles numPictures={3} title="Mechanical Engineers"/>
+            <Profiles numPictures={3} title="Electrical Engineers"/>
+            
+        </div>
       </div>
     );
   }
