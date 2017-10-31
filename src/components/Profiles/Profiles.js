@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import AnimateHeight from 'react-animate-height';
 import Avatar from 'react-avatar';
@@ -7,12 +8,21 @@ import './Profiles.css'
 //Avatar documentation at : https://www.npmjs.com/package/react-avatar
 //AnimateHeight documentation at : https://www.npmjs.com/package/react-animate-height
 
-var ProfilePictures = class extends React.Component{
-    render() {
+class Profiles extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            height: props.height
+        }
+    }
+
+    renderPictures(numPictures) {
         var pictures = [];
-        for (var i = 0; i < this.props.numPictures; i++) {
+        for (var i = 0; i < numPictures; i++) {
                 pictures.push(
-                    <Avatar size="200" src="http://www.gravatar.com/avatar/a16a38cdfe8b2cbd38e8a56ab93238d3" />
+                    <Avatar size={200} key={i} src="http://www.gravatar.com/avatar/a16a38cdfe8b2cbd38e8a56ab93238d3" />
                 );
             }
         
@@ -20,20 +30,9 @@ var ProfilePictures = class extends React.Component{
             <div className="pictures">{pictures}</div>
         );
     }
-};
-
-var Profiles = class extends React.Component {
-    constructor() {
-        super();
-
-        this.state = {
-            height: 0,
-        };
-        this.onToggleClick = this.onToggleClick.bind(this);
-    }
-
+    
     onToggleClick(){
-        if (this.state.height == 'auto'){
+        if (this.state.height === 'auto'){
             this.setState({ height: 0 });
         }
         else {
@@ -43,16 +42,12 @@ var Profiles = class extends React.Component {
     }
 
     render() {
-        const {
-        height,
-        } = this.state;
-
-        
+        const {height} = this.state;
 
         return (
             <div>
                 <div className='buttons'>
-                    <button className='btn btn-sm' onClick={this.onToggleClick}>
+                    <button className='btn btn-sm' onClick={() => {this.onToggleClick();}}>
                         {this.props.title}
                     </button>
                 </div>
@@ -61,7 +56,7 @@ var Profiles = class extends React.Component {
                     duration = { 500 }
                 >
                     <div className='content'>
-                        <ProfilePictures numPictures={this.props.numPictures} />
+                        {this.renderPictures(this.props.numPictures)}
                     </div>
                 </AnimateHeight>
 
@@ -69,6 +64,18 @@ var Profiles = class extends React.Component {
         );
     }
 };
+
+Profiles.propTypes = {
+    height: PropTypes.number,
+    numPictures: PropTypes.number,
+    title: PropTypes.string
+  };
+  
+Profiles.defaultProps = {
+    height: 0,
+    numPictures: 1,
+    title: "Hello World"
+}
 
 export default Profiles;
 

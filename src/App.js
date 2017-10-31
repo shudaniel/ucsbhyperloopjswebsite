@@ -5,7 +5,7 @@ import Toolbar from 'material-ui/Toolbar';
 import ToolbarGroup from 'material-ui/Toolbar';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import {Carousel} from 'react-responsive-carousel';
-import Profiles from './Profiles'
+import Profiles from './components/Profiles/Profiles'
 
 class App extends Component {
   render() {
