@@ -17,7 +17,7 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.css$/, loader: 'css-loader', options: { modules: true, sourceMap: true } },
+      { test: /\.css$/, loader: ['style-loader', 'css-loader'] },
       {
         test: /\.(jpe?g|png|gif|svg|ico|webp)$/,
         loader: "url-loader",
