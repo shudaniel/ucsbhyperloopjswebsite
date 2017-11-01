@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import AnimateHeight from 'react-animate-height';
 import Avatar from 'react-avatar';
+import RaisedButton from 'material-ui/RaisedButton';
 import './Profiles.css'
 
 //Avatar documentation at : https://www.npmjs.com/package/react-avatar
@@ -22,12 +23,12 @@ class Profiles extends Component {
         var pictures = [];
         for (var i = 0; i < numPictures; i++) {
                 pictures.push(
-                    <Avatar size={200} key={i} src="http://www.gravatar.com/avatar/a16a38cdfe8b2cbd38e8a56ab93238d3" />
+                    <Avatar className="profilePic" size={200} key={i} round={true} name="Test Name" src="http://www.gravatar.com/avatar/a16a38cdfe8b2cbd38e8a56ab93238d3" />
                 );
             }
         
         return (
-            <div className="pictures">{pictures}</div>
+            <div className="center">{pictures}</div>
         );
     }
     
@@ -46,11 +47,8 @@ class Profiles extends Component {
 
         return (
             <div>
-                <div className='buttons'>
-                    <button className='btn btn-sm' onClick={() => {this.onToggleClick();}}>
-                        {this.props.title}
-                    </button>
-                </div>
+                <RaisedButton label={this.props.title} primary={true} onClick={() => { this.onToggleClick(); }}  fullWidth={true} />
+
                 <AnimateHeight
                     height={height}
                     duration = { 500 }
