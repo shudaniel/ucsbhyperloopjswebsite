@@ -4,8 +4,14 @@ body {
   font-family: sans-serif;
 }
 
-.carousel {
-  height: 400px
+.carousel{
+    height: 400px;
+}
+
+.main-body{
+    margin-left:  20px;
+    margin-right: 20px;
+    margin-top: 30px;
 }
 
 .bigblock {
