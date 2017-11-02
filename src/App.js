@@ -51,8 +51,12 @@ class App extends Component {
           <div className="bigblock" id="team">
             team
             <h1>Meet the Team</h1><br/>
-            <Profiles numPictures={3} title="Mechanical Engineers"/>
-            <Profiles numPictures={3} title="Electrical Engineers"/>
+            <Profiles numPictures={3} title="Mechanical Engineers"
+                images={["assets/cat.jpg","assets/cat.jpg","assets/cat.jpg"]}
+            />
+            <Profiles numPictures={3} title="Electrical Engineers"
+                images={["assets/cat.jpg", "assets/cat.jpg", "assets/cat.jpg"]}
+            />
           </div>
           <div className="bigblock" id="sponsors">
             asdfdfs

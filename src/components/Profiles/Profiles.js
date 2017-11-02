@@ -19,11 +19,12 @@ class Profiles extends Component {
         }
     }
 
-    renderPictures(numPictures) {
+    // numPictures must be <= the size of picturesArray
+    renderPictures(numPictures, picturesArray) {
         var pictures = [];
         for (var i = 0; i < numPictures; i++) {
                 pictures.push(
-                    <Avatar className="profilePic" size={200} key={i} round={true} name="Test Name" src="http://www.gravatar.com/avatar/a16a38cdfe8b2cbd38e8a56ab93238d3" />
+                    <Avatar className="profilePic" size={200} key={i} round={true} name="Test Name" src={picturesArray[i]} />
                 );
             }
         
@@ -54,7 +55,7 @@ class Profiles extends Component {
                     duration = { 500 }
                 >
                     <div className='content'>
-                        {this.renderPictures(this.props.numPictures)}
+                        {this.renderPictures(this.props.numPictures, this.props.images)}
                     </div>
                 </AnimateHeight>
 
