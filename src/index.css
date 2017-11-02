@@ -3,3 +3,21 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.carousel{
+    height: 400px;
+}
+
+.main-body{
+    margin-left:  20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.bigblock {
+  padding-top: 110px
+}
+
+header {
+  height: 100px;
+}
