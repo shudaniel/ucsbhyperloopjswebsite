@@ -6,6 +6,7 @@ import ToolbarGroup from 'material-ui/Toolbar';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import {Carousel} from 'react-responsive-carousel';
 import Profiles from './components/Profiles/Profiles'
+import StaggeredCard from './components/StaggeredCard/StaggeredCard'
 
 class App extends Component {
   render() {
@@ -22,11 +23,11 @@ class App extends Component {
         </AppBar>
         <Carousel showThumbs={false} infiniteLoop={true}>
           <div>
-            <img src={logo}/>
+            <img src="assets/logo.jpg"/>
             <p className="legend">Legend 1</p>
           </div>
           <div>
-            <img src={logo}/>
+            <img src="assets/logo.jpg"/>
             <p className="legend">Legend 2</p>
           </div>
           <div>
@@ -36,7 +37,16 @@ class App extends Component {
         </Carousel>
         <div className="main-body">
           <div className="bigblock" id="pod">
-            asdlkjfas
+ 
+            <StaggeredCard image="assets/cat.jpg" index="0" title="Section Title"
+                        text="Lighter than dry pasta and deeply flavorful, fresh pasta isn't something to master in one go, but the end result is truly worthwhile. This particular recipe for an egg dough is vastly versatile. It can take on flavors from whole grain flours, saffron, herbs, or sauteed greens, or can be shaped into a number of different styles. And, with time and practice, what may have started as a cooking project may end up being the foundation for weeknight meals to come."
+            />
+            <StaggeredCard image="assets/cat.jpg" index="1" title="Section Title"
+                text="Lighter than dry pasta and deeply flavorful, fresh pasta isn't something to master in one go, but the end result is truly worthwhile. This particular recipe for an egg dough is vastly versatile. It can take on flavors from whole grain flours, saffron, herbs, or sauteed greens, or can be shaped into a number of different styles. And, with time and practice, what may have started as a cooking project may end up being the foundation for weeknight meals to come."
+            />
+            <StaggeredCard image="assets/cat.jpg" index="0" title="Section Title"
+                text="Lighter than dry pasta and deeply flavorful, fresh pasta isn't something to master in one go, but the end result is truly worthwhile. This particular recipe for an egg dough is vastly versatile. It can take on flavors from whole grain flours, saffron, herbs, or sauteed greens, or can be shaped into a number of different styles. And, with time and practice, what may have started as a cooking project may end up being the foundation for weeknight meals to come."
+            />
           </div>
           <div className="bigblock" id="team">
             team

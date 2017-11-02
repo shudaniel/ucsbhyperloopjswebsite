@@ -3663,6 +3663,10 @@ react-avatar@^2.4.0:
     is-retina "^1.0.3"
     md5 "^2.0.0"
 
+react-columns@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-columns/-/react-columns-1.1.0.tgz#0cae4188c329f423b78c78f74a40b0bbb5e799a0"
+
 react-dom@^16.0.0:
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.0.0.tgz#9cc3079c3dcd70d4c6e01b84aab2a7e34c303f58"
