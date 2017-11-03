@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import AnimateHeight from 'react-animate-height';
-import Avatar from 'react-avatar';
 import RaisedButton from 'material-ui/RaisedButton';
+import Columns from 'react-columns'
 import './Profiles.css'
+import TeamMember from '../TeamMember/TeamMember.js'
 
 //Avatar documentation at : https://www.npmjs.com/package/react-avatar
 //AnimateHeight documentation at : https://www.npmjs.com/package/react-animate-height
@@ -20,12 +21,12 @@ class Profiles extends Component {
     }
 
     // numPictures must be <= the size of picturesArray
-    renderPictures(numPictures, picturesArray) {
+    renderAllPictures(numPictures, picturesArray,namesArray, rolesArray) {
         var pictures = [];
         for (var i = 0; i < numPictures; i++) {
-                pictures.push(
-                    <Avatar className="profilePic" size={200} key={i} round={true} name="Test Name" src={picturesArray[i]} />
-                );
+            pictures.push(
+                <TeamMember key={i} name={namesArray[i]} image={picturesArray[i]} role={rolesArray[i]} />
+            );
             }
         
         return (
@@ -55,7 +56,8 @@ class Profiles extends Component {
                     duration = { 500 }
                 >
                     <div className='content'>
-                        {this.renderPictures(this.props.numPictures, this.props.images)}
+                        <p>{this.props.description}</p>
+                        {this.renderAllPictures(this.props.numPictures, this.props.images, this.props.names, this.props.roles)}
                     </div>
                 </AnimateHeight>
 
