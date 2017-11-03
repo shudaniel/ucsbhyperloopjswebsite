@@ -21,11 +21,12 @@ class Profiles extends Component {
     }
 
     // numPictures must be <= the size of picturesArray
-    renderAllPictures(numPictures, picturesArray,namesArray, rolesArray) {
+    renderAllPictures(team) {
+        if (!team) { return null}
         var pictures = [];
-        for (var i = 0; i < numPictures; i++) {
+        for (var i = 0; i < team.members.length; i++) {
             pictures.push(
-                <TeamMember key={i} name={namesArray[i]} image={picturesArray[i]} role={rolesArray[i]} />
+                <TeamMember key={i} name={team.members[i].name} image={team.members[i].image} role={team.members[i].role} />
             );
             }
         
@@ -56,8 +57,8 @@ class Profiles extends Component {
                     duration = { 500 }
                 >
                     <div className='content'>
-                        <p>{this.props.description}</p>
-                        {this.renderAllPictures(this.props.numPictures, this.props.images, this.props.names, this.props.roles)}
+                        <p>{this.props.team ? this.props.team.description : "asdf"}</p>
+                        {this.renderAllPictures(this.props.team)}
                     </div>
                 </AnimateHeight>
 
@@ -68,13 +69,13 @@ class Profiles extends Component {
 
 Profiles.propTypes = {
     height: PropTypes.number,
-    numPictures: PropTypes.number,
+    team: PropTypes.object,
     title: PropTypes.string
   };
   
 Profiles.defaultProps = {
     height: 0,
-    numPictures: 1,
+    team: null,
     title: "Hello World"
 }
 
