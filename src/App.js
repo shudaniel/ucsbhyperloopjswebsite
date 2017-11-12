@@ -6,33 +6,34 @@ import ToolbarGroup from 'material-ui/Toolbar';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import {Carousel} from 'react-responsive-carousel';
 import Profiles from './components/Profiles/Profiles'
+import FlatButton from 'material-ui/FlatButton';
 import StaggeredCard from './components/StaggeredCard/StaggeredCard'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <AppBar>
-          <Toolbar>
-            <img src={logo} className="App-logo" alt="logo"/>
-            <h1 className="App-title">Welcome to React</h1>
-            <ToolbarGroup>
-              <a href="#team">team</a>
+        <AppBar showMenuIconButton={false}>
+          <Toolbar style={{width: "100%", backgroundColor: "inherit"}}>
+            <img src={logo} className="App-logo" alt="logo" style={{maxWidth: "100px"}}/>
+            <h5>UCSB Hyperloop</h5>
+            <ToolbarGroup style={{backgroundColor: "inherit"}}>
+              <a href="#team">
+                <FlatButton label="Team" primary={true}>
+                </FlatButton>
+              </a>
             </ToolbarGroup>
           </Toolbar>
         </AppBar>
         <Carousel showThumbs={false} infiniteLoop={true}>
           <div>
-            <img src="assets/logo.jpg"/>
-            <p className="legend">Legend 1</p>
+            <img src="assets/ucsbhyp.jpg"/>
           </div>
           <div>
-            <img src="assets/logo.jpg"/>
-            <p className="legend">Legend 2</p>
+            <img src="assets/podAlone.jpg"/>
           </div>
           <div>
-            <img src={logo}/>
-            <p className="legend">Legend 3</p>
+            <img src="assets/team2.jpg"/>
           </div>
         </Carousel>
         <div className="main-body">
