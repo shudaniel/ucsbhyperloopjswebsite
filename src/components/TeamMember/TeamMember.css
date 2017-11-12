@@ -1,0 +1,16 @@
+.team-member {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+.avatar {
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.caption {
+    display: block;
+    text-align: center;
+}

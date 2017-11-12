@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import AnimateHeight from 'react-animate-height';
-import Avatar from 'react-avatar';
 import RaisedButton from 'material-ui/RaisedButton';
+import Columns from 'react-columns'
 import './Profiles.css'
+import TeamMember from '../TeamMember/TeamMember.js'
 
 //Avatar documentation at : https://www.npmjs.com/package/react-avatar
 //AnimateHeight documentation at : https://www.npmjs.com/package/react-animate-height
@@ -20,12 +21,13 @@ class Profiles extends Component {
     }
 
     // numPictures must be <= the size of picturesArray
-    renderPictures(numPictures, picturesArray) {
+    renderAllPictures(team) {
+        if (!team) { return null}
         var pictures = [];
-        for (var i = 0; i < numPictures; i++) {
-                pictures.push(
-                    <Avatar className="profilePic" size={200} key={i} round={true} name="Test Name" src={picturesArray[i]} />
-                );
+        for (var i = 0; i < team.members.length; i++) {
+            pictures.push(
+                <TeamMember key={i} name={team.members[i].name} image={team.members[i].image} role={team.members[i].role} />
+            );
             }
         
         return (
@@ -55,7 +57,8 @@ class Profiles extends Component {
                     duration = { 500 }
                 >
                     <div className='content'>
-                        {this.renderPictures(this.props.numPictures, this.props.images)}
+                        <p>{this.props.team ? this.props.team.description : "asdf"}</p>
+                        {this.renderAllPictures(this.props.team)}
                     </div>
                 </AnimateHeight>
 
@@ -66,13 +69,13 @@ class Profiles extends Component {
 
 Profiles.propTypes = {
     height: PropTypes.number,
-    numPictures: PropTypes.number,
+    team: PropTypes.object,
     title: PropTypes.string
   };
   
 Profiles.defaultProps = {
     height: 0,
-    numPictures: 1,
+    team: null,
     title: "Hello World"
 }
 

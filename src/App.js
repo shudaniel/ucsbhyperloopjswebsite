@@ -8,6 +8,7 @@ import {Carousel} from 'react-responsive-carousel';
 import Profiles from './components/Profiles/Profiles'
 import FlatButton from 'material-ui/FlatButton';
 import StaggeredCard from './components/StaggeredCard/StaggeredCard'
+import { Mechanical, Electrical } from './constants';
 
 class App extends Component {
   render() {
@@ -52,11 +53,9 @@ class App extends Component {
           <div className="bigblock" id="team">
             team
             <h1>Meet the Team</h1><br/>
-            <Profiles numPictures={3} title="Mechanical Engineers"
-                images={["assets/cat.jpg","assets/cat.jpg","assets/cat.jpg"]}
+            <Profiles team={Mechanical} title="Mechanical Engineers"
             />
-            <Profiles numPictures={3} title="Electrical Engineers"
-                images={["assets/cat.jpg", "assets/cat.jpg", "assets/cat.jpg"]}
+            <Profiles team={Electrical} title="Electrical Engineers"
             />
           </div>
           <div className="bigblock" id="sponsors">
