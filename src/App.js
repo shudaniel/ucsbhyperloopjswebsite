@@ -26,12 +26,11 @@ class App extends Component {
         </Carousel>
         <div className="main-body">
           <div className="bigblock" id="pod">
-            <h1>Our Pod</h1><br />
-
-            <StaggeredCard image="assets/cat.jpg" index="0" title="Section Title"
-                        text="Lighter than dry pasta and deeply flavorful, fresh pasta isn't something to master in one go, but the end result is truly worthwhile. This particular recipe for an egg dough is vastly versatile. It can take on flavors from whole grain flours, saffron, herbs, or sauteed greens, or can be shaped into a number of different styles. And, with time and practice, what may have started as a cooking project may end up being the foundation for weeknight meals to come."
+ 
+            <StaggeredCard image="assets/loop.png" index="0" title="The Hyperloop Competition"
+                text="The Hyperloop Pod Competition is an incentive prize competition sponsored by SpaceX that is being held in 2015–2018 where a number of student and non-student teams are participating to design—and for some, build—a subscale prototype transport vehicle to demonstrate technical feasibility of various aspects of the Hyperloop concept. The competitions have been open to participants globally, although all competitions and judging has occurred in the United States."
             />
-            <StaggeredCard image="assets/cat.jpg" index="1" title="Section Title"
+            <StaggeredCard image="assets/pod.jpg" index="1" title="Our Pod"
                 text="Lighter than dry pasta and deeply flavorful, fresh pasta isn't something to master in one go, but the end result is truly worthwhile. This particular recipe for an egg dough is vastly versatile. It can take on flavors from whole grain flours, saffron, herbs, or sauteed greens, or can be shaped into a number of different styles. And, with time and practice, what may have started as a cooking project may end up being the foundation for weeknight meals to come."
             />
             <StaggeredCard image="assets/cat.jpg" index="0" title="Section Title"
@@ -46,19 +45,10 @@ class App extends Component {
             />
           </div>
           <div className="bigblock" id="sponsors">
-            <h1>Our Sponsors</h1><br />
-          </div>
-          <div className="bigblock" id="competition">
-            <h1>The Hyperloop Competition</h1><br />
-            <StaggeredCard image="assets/cat.jpg" index="0" title="Section Title"
-                        text="Lighter than dry pasta and deeply flavorful, fresh pasta isn't something to master in one go, but the end result is truly worthwhile. This particular recipe for an egg dough is vastly versatile. It can take on flavors from whole grain flours, saffron, herbs, or sauteed greens, or can be shaped into a number of different styles. And, with time and practice, what may have started as a cooking project may end up being the foundation for weeknight meals to come."
-           />
+            sponsors
           </div>
           <div className="bigblock" id="supportUs">
-            <h1>Support Us</h1><br />
-            <StaggeredCard image="assets/cat.jpg" index="1" title="Section Title"
-                text="Lighter than dry pasta and deeply flavorful, fresh pasta isn't something to master in one go, but the end result is truly worthwhile. This particular recipe for an egg dough is vastly versatile. It can take on flavors from whole grain flours, saffron, herbs, or sauteed greens, or can be shaped into a number of different styles. And, with time and practice, what may have started as a cooking project may end up being the foundation for weeknight meals to come."
-            />
+            supportUs
           </div>
         </div>
       </div>
