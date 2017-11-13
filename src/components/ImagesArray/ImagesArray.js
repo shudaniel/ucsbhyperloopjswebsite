@@ -52,7 +52,7 @@ class ImagesArray extends Component{
         return (
             <div>
                 <p> Insert Lightbox here </p> <br />
-                <Gallery photos={this.props.imagesArray} onClick={this.openLightbox} />
+                <Gallery photos={this.props.imagesArray} onClick={this.openLightbox} columns={this.props.numColumns} />
                 <Lightbox
                 images={this.props.imagesArray}
                 isOpen={this.state.lightboxIsOpen}
@@ -69,7 +69,8 @@ class ImagesArray extends Component{
 }
 
 ImagesArray.defaultProps = {
-    imagesArray: []
+    imagesArray: [],
+    numColumns: 3
 };
 
 export default ImagesArray;

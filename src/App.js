@@ -44,7 +44,7 @@ class App extends Component {
             />
             <Profiles team={Electrical} title="Electrical Engineers"
             />
-            <ImagesArray imagesArray={TEAM_IMAGES} />
+            <ImagesArray imagesArray={TEAM_IMAGES} numColumns={4} />
           </div>
           <div className="bigblock" id="sponsors">
             sponsors
