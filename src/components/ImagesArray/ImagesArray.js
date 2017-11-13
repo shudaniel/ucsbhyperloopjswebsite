@@ -51,7 +51,6 @@ class ImagesArray extends Component{
 
         return (
             <div>
-                <p> Insert Lightbox here </p> <br />
                 <Gallery photos={this.props.imagesArray} onClick={this.openLightbox} columns={this.props.numColumns} />
                 <Lightbox
                 images={this.props.imagesArray}

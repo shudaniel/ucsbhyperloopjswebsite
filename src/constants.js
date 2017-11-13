@@ -53,8 +53,8 @@ export const TEAM_IMAGES =
         },
         {
             src: "assets/TeamPhotos/Hyperloop (15 of 64).jpg",
-            width: 3,
-            height: 2
+            width: 2,
+            height: 3
         },
         {
             src: "assets/TeamPhotos/Hyperloop (16 of 64).jpg",
@@ -67,12 +67,12 @@ export const TEAM_IMAGES =
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (18 of 64).jpg",
-            width: 3,
-            height: 2
+            src: "assets/TeamPhotos/Hyperloop (19 of 64).jpg",
+            width: 2,
+            height: 3
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (19 of 64).jpg",
+            src: "assets/TeamPhotos/Hyperloop (18 of 64).jpg",
             width: 3,
             height: 2
         },
