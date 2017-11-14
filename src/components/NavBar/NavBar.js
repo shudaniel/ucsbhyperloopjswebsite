@@ -22,7 +22,7 @@ class NavBar extends Component{
         );
         return (
             <AppBar showMenuIconButton={false}
-                title={<span>UCSB Hyperloop</span>}
+                title={<img src="assets/logo-inverted.png" height = "50px"/>}
                 iconElementRight={
                     <ToolbarGroup style={{ width: "100%", backgroundColor: "inherit" }}>{myTabs}</ToolbarGroup>
                 }
