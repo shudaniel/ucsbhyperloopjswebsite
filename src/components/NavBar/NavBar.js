@@ -16,8 +16,8 @@ class NavBar extends Component{
                 <Tab className="navbar-tab" label="Pod" href="#pod" />
                 <Tab className="navbar-tab" label="Team" href="#team" />
                 <Tab className="navbar-tab" label="Sponsors" href="#sponsors" />
-                <Tab className="navbar-tab" label="Competition" href="#competition" />
                 <Tab className="navbar-tab" label="Support Us" href="#supportUs" />
+                <Tab className="navbar-tab" label="Gallery" href="#gallery" />
             </Tabs>
         );
         return (
