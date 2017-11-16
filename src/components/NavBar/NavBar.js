@@ -16,13 +16,13 @@ class NavBar extends Component{
                 <Tab className="navbar-tab" label="Pod" href="#pod" />
                 <Tab className="navbar-tab" label="Team" href="#team" />
                 <Tab className="navbar-tab" label="Sponsors" href="#sponsors" />
-                <Tab className="navbar-tab" label="Competition" href="#competition" />
                 <Tab className="navbar-tab" label="Support Us" href="#supportUs" />
+                <Tab className="navbar-tab" label="Gallery" href="#gallery" />
             </Tabs>
         );
         return (
             <AppBar showMenuIconButton={false}
-                title={<span>UCSB Hyperloop</span>}
+                title={<img src="assets/logo-inverted.png" height = "50px"/>}
                 iconElementRight={
                     <ToolbarGroup style={{ width: "100%", backgroundColor: "inherit" }}>{myTabs}</ToolbarGroup>
                 }

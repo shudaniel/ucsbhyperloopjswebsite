@@ -5,7 +5,8 @@ import {Carousel} from 'react-responsive-carousel';
 import Profiles from './components/Profiles/Profiles'
 import StaggeredCard from './components/StaggeredCard/StaggeredCard'
 import NavBar from './components/NavBar/NavBar'
-import { Mechanical, Electrical } from './constants';
+import ImagesArray from './components/ImagesArray/ImagesArray'
+import { Mechanical, Electrical, TEAM_IMAGES } from './constants';
 
 class App extends Component {
 
@@ -43,12 +44,17 @@ class App extends Component {
             />
             <Profiles team={Electrical} title="Electrical Engineers"
             />
+            
           </div>
           <div className="bigblock" id="sponsors">
-            sponsors
+            <h1>Our Sponsors</h1><br />
           </div>
           <div className="bigblock" id="supportUs">
-            supportUs
+            <h1>Support Us</h1><br />
+          </div>
+          <div className="bigblock" id="gallery">
+            <h1>Gallery</h1><br/>
+            <ImagesArray imagesArray={TEAM_IMAGES} numColumns={4} />
           </div>
         </div>
       </div>

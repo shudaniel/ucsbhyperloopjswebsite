@@ -13,7 +13,8 @@ class StaggeredCard extends Component {
 
     renderPicture(imageSrc) {
         return (
-            <center><img src={imageSrc} style={{borderRadius: "10px"}} alt="Picture" width="250px" height="200px"/></center>
+            <div className="cardImage"><center><img src={imageSrc} style={{borderRadius: "10px"}} alt="Picture" width="250px" height="200px"/></center></div>
+
             );
     }
     renderText(title, text){
