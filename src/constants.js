@@ -47,11 +47,6 @@ export const TEAM_IMAGES =
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (14 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/Hyperloop (15 of 64).jpg",
             width: 2,
             height: 3
@@ -60,16 +55,6 @@ export const TEAM_IMAGES =
             src: "assets/TeamPhotos/Hyperloop (16 of 64).jpg",
             width: 3,
             height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (17 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (19 of 64).jpg",
-            width: 2,
-            height: 3
         },
         {
             src: "assets/TeamPhotos/Hyperloop (18 of 64).jpg",
@@ -82,27 +67,12 @@ export const TEAM_IMAGES =
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (20 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/Hyperloop (21 of 64).jpg",
             width: 3,
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (22 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/Hyperloop (23 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (24 of 64).jpg",
             width: 3,
             height: 2
         },
@@ -113,16 +83,6 @@ export const TEAM_IMAGES =
         },
         {
             src: "assets/TeamPhotos/Hyperloop (26 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (27 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (28 of 64).jpg",
             width: 3,
             height: 2
         },
@@ -142,52 +102,7 @@ export const TEAM_IMAGES =
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (31 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (32 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (33 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (34 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/Hyperloop (35 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (36 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (37 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (38 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (39 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (4 of 64).jpg",
             width: 3,
             height: 2
         },
@@ -197,22 +112,7 @@ export const TEAM_IMAGES =
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (41 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (42 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/Hyperloop (43 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (44 of 64).jpg",
             width: 3,
             height: 2
         },
@@ -222,22 +122,7 @@ export const TEAM_IMAGES =
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (46 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (47 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/Hyperloop (48 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (49 of 64).jpg",
             width: 3,
             height: 2
         },
@@ -247,27 +132,7 @@ export const TEAM_IMAGES =
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (50 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/Hyperloop (51 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (52 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (53 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (54 of 64).jpg",
             width: 3,
             height: 2
         },
@@ -365,20 +230,5 @@ export const TEAM_IMAGES =
             src: "assets/TeamPhotos/team shot.jpg",
             width: 3,
             height: 2
-        },
-        {
-            src: "assets/TeamPhotos/tyler 1.jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/tyler 2.jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/tyler FINAL.jpg",
-            width: 3,
-            height: 2
-        },
+        }
     ];
