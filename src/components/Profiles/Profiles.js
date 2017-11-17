@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import AnimateHeight from 'react-animate-height';
 import RaisedButton from 'material-ui/RaisedButton';
 import Columns from 'react-columns'
-import './Profiles.css'
+import styles from './Profiles.css'
 import TeamMember from '../TeamMember/TeamMember.js'
 
 //Avatar documentation at : https://www.npmjs.com/package/react-avatar
