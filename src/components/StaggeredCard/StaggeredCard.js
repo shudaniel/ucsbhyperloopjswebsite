@@ -13,16 +13,28 @@ class StaggeredCard extends Component {
 
     renderPicture(imageSrc) {
         return (
-            <div className="cardImage"><center><img src={imageSrc} style={{borderRadius: "10px"}} alt="Picture" width="250px" height="200px"/></center></div>
+            <div><center><img src={imageSrc} style={{borderRadius: "10px"}} alt="Picture" width="250px" height="200px"/></center></div>
 
             );
     }
-    renderText(title, text){
+    renderTextOnRight(title, text, imageSrc){
         return (
-            <div>
-                <h3>{title}</h3>
-                <p>{text}</p>
-            </div>
+
+                <p>
+                    <center><img className="card-image" src={imageSrc} style={{ borderRadius: "10px" }} alt="Picture" align="left" valign="middle" height="200px" width="250px" /></center>
+                    {text}
+                </p>
+
+        );
+    }
+    renderTextOnLeft(title, text, imageSrc) {
+        return (
+ 
+                <p>
+                    {text}
+                    <center><img className="card-image" src={imageSrc} style={{ borderRadius: "10px" }} alt="Picture" align="right" valign="middle" height="200px" width="250px" /></center>
+                </p>
+ 
         );
     }
 
@@ -30,21 +42,16 @@ class StaggeredCard extends Component {
         if (this.props.index % 2 == 0) {
             return (
                 <div className="staggeredCard">
-                    <Columns columns={2} gap="20px">
-                        {this.renderText(this.props.title, this.props.text)}
-                        {this.renderPicture(this.props.image)}
-                    </Columns>
+                    <h3>{this.props.title}</h3>
+                    {this.renderTextOnLeft(this.props.title, this.props.text, this.props.image)}
                 </div>
                 );
         }
         else {
             return (
                 <div className="staggeredCard">
-                    <Columns columns={2} gap="20px">
-                        {this.renderPicture(this.props.image)}
-                        {this.renderText(this.props.title, this.props.text)}
-                        
-                    </Columns>
+                    <h3>{this.props.title}</h3>
+                    {this.renderTextOnRight(this.props.title, this.props.text, this.props.image)}
                 </div>
             );
         }
