@@ -22,7 +22,7 @@ class NavBar extends Component{
         );
         return (
             <AppBar showMenuIconButton={false}
-                title={<img src="assets/logo-inverted.png" height = "50px"/>}
+                title={<a href="#top"><img src="assets/logo-inverted.png" height = "50px"/> </a>}
                 iconElementRight={
                     <ToolbarGroup style={{ width: "100%", backgroundColor: "inherit" }}>{myTabs}</ToolbarGroup>
                 }

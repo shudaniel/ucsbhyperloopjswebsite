@@ -1,7 +1,9 @@
 
 .staggeredCard {
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .cardImage{
     overflow: auto;
