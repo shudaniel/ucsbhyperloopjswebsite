@@ -17,13 +17,13 @@ class App extends Component {
         <NavBar />
         <Carousel showThumbs={false} infiniteLoop={true} id="top">
           <div>
-            <img src="assets/ucsbhyp.jpg"/>
+            <img  src="assets/ucsbhyp.jpg"/>
           </div>
           <div>
-            <img src="assets/podAlone.jpg"/>
+            <img className="carousel-img" src="assets/podAlone.jpg"/>
           </div>
           <div>
-            <img src="assets/team2.jpg"/>
+            <img className="carousel-img"  src="assets/team2.jpg"/>
           </div>
         </Carousel>
         <div className="main-body">
