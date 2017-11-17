@@ -1,11 +1,14 @@
 
 .staggeredCard {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
 }
-.cardImage{
-    overflow: auto;
+.cardImage img{
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 200px;
+    vertical-align: middle;
 
 }
