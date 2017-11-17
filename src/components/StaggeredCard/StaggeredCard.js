@@ -13,7 +13,7 @@ class StaggeredCard extends Component {
 
     renderPicture(imageSrc) {
         return (
-            <div className="cardImage"><center><img src={imageSrc} style={{borderRadius: "10px"}} alt="Picture" width="250px" height="200px"/></center></div>
+            <div className="cardImage"><center><img src={imageSrc} style={{borderRadius: "10px"}} alt="Picture" width="300px" height="200px"/></center></div>
 
             );
     }
@@ -39,7 +39,7 @@ class StaggeredCard extends Component {
         }
         else {
             return (
-                <div className="staggeredCard">
+                <div style={{backgroundColor: "rgb(239, 239, 239)"}} className="staggeredCard">
                     <Columns columns={2} gap="20px">
                         {this.renderPicture(this.props.image)}
                         {this.renderText(this.props.title, this.props.text)}
