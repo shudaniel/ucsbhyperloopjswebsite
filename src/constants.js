@@ -16,9 +16,16 @@ export const Mechanical = {
     description: ""
 };
 
-export const Electrical = {
+export const ADVISORS = {
     members: [
         { image: "assets/Headshots/Ilan Ben-Yaacov - EE Advisor.jpeg", name: "Ilan Ben-Yaacov", role: "EE Advisor"},
+    ],
+    description: ""
+};
+
+export const Electrical = {
+    members: [
+        
         { image: "assets/Headshots/Rachel Reyes - EE.jpg", name: "Rachel Reyes", role: "Project Manager" },
         { image: "assets/Headshots/Blake Diamond - EE.jpeg", name: "Blake Diamond", role: ""},
         { image: "assets/Headshots/Evan Blasband - EE.jpeg", name: "Evan Blasband", role: "" },

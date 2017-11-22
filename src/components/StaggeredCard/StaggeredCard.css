@@ -9,6 +9,8 @@
     border-radius: 10px;
     max-width: 300px;
     max-height: 200px;
+    min-width: 250px;
+    min-height: 150px;
     vertical-align: middle;
 
 }
