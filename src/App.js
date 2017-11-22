@@ -6,6 +6,7 @@ import Profiles from './components/Profiles/Profiles'
 import StaggeredCard from './components/StaggeredCard/StaggeredCard'
 import NavBar from './components/NavBar/NavBar'
 import ImagesArray from './components/ImagesArray/ImagesArray'
+import Footer from './components/Footer/Footer'
 import { Mechanical, Electrical, CE, TEAM_IMAGES } from './constants';
 import appStyles from './App.css'
 
@@ -57,6 +58,10 @@ class App extends Component {
           <div className="bigblock" id="gallery">
             <h1>Gallery</h1><br/>
             <ImagesArray imagesArray={TEAM_IMAGES} numColumns={4} />
+          </div>
+
+          <div className="bigblock">
+            <Footer />
           </div>
         </div>
       </div>
