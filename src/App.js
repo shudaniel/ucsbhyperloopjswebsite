@@ -6,7 +6,7 @@ import Profiles from './components/Profiles/Profiles'
 import StaggeredCard from './components/StaggeredCard/StaggeredCard'
 import NavBar from './components/NavBar/NavBar'
 import ImagesArray from './components/ImagesArray/ImagesArray'
-import { Mechanical, Electrical, TEAM_IMAGES } from './constants';
+import { Mechanical, Electrical, CE, TEAM_IMAGES } from './constants';
 import appStyles from './App.css'
 
 class App extends Component {
@@ -30,7 +30,7 @@ class App extends Component {
           <div className="bigblock" id="pod">
  
             <StaggeredCard image="assets/TeamPhotos/Hyperloop (6 of 64).jpg" index="0" title="The Hyperloop Competition"
-                text="The Hyperloop Pod Competition is an incentive prize competition sponsored by SpaceX that is being held in 2015–2018 where a number of student and non-student teams are participating to design—and for some, build—a subscale prototype transport vehicle to demonstrate technical feasibility of various aspects of the Hyperloop concept. The competitions have been open to participants globally, although all competitions and judging has occurred in the United States."
+                text="The Hyperloop Pod Competition is an event sponsored by SpaceX that is being held in Hawthorne, California where a number of student and non-student teams are participating to design—and for some, build—a subscale prototype transport vehicle to demonstrate technical feasibility of various aspects of the Hyperloop concept. The competitions have been open to participants globally, although all competitions and judging has occurred in the United States."
             />
             <StaggeredCard image="assets/pod.jpg" index="1" title="Our Pod"
                 text="Lighter than dry pasta and deeply flavorful, fresh pasta isn't something to master in one go, but the end result is truly worthwhile. This particular recipe for an egg dough is vastly versatile. It can take on flavors from whole grain flours, saffron, herbs, or sauteed greens, or can be shaped into a number of different styles. And, with time and practice, what may have started as a cooking project may end up being the foundation for weeknight meals to come."
@@ -45,6 +45,7 @@ class App extends Component {
             />
             <Profiles team={Electrical} title="Electrical Engineers"
             />
+            <Profiles team={CE} title="Computer Engineers" />
             
           </div>
           <div className="bigblock" id="sponsors">
