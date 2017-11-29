@@ -60,7 +60,7 @@ class App extends Component {
             <ImagesArray imagesArray={TEAM_IMAGES} numColumns={4} />
           </div>
 
-          <div className="bigblock">
+          <div className="footer sb-blue">
             <Footer />
           </div>
         </div>

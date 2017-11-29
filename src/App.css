@@ -5,3 +5,13 @@ h1 {
 .carousel-img {
     margin-top: 50px;
 }
+
+.sb-blue {
+    background-color: #18335d;
+}
+
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-content: center;
+}
