@@ -2,20 +2,50 @@
 
 export const Mechanical = {
     members: [
-        {image: "assets/cat.jpg", name: "Cat1", role: "Role1"},
-        {image: "assets/cat.jpg", name: "Cat2", role: "Role2"},
-        {image: "assets/cat.jpg", name: "Cat3", role: "Role3"}
+        { image: "assets/Headshots/Andrew Chiang - ME.jpeg", name: "Andrew Chiang", role: ""},
+        { image: "assets/Headshots/Edsel Pereyra - ME.jpeg", name: "Edsel Pereyra", role: ""},
+        { image: "assets/Headshots/Gavin Glynn - Math.jpeg", name: "Gavin Glynn", role: "" },
+        { image: "assets/Headshots/Gavin Marcon  - ME.jpeg", name: "Gavin Marcon", role: "" },
+        { image: "assets/Headshots/Ryan Porteous - ME.jpeg", name: "Ryan Porteous", role: "" },
+        { image: "assets/Headshots/Jackson Button - ME.jpeg", name: "Jackson Button", role: "" },
+        { image: "assets/Headshots/Nate Rudolph - ME.jpeg", name: "Nate Rudolph", role: "" },
+        { image: "assets/Headshots/Wesley Carias - ME.jpeg", name: "Wesley Carias", role: "" },
+        { image: "assets/Headshots/Zhijiong(Raymond) Huang -ME.jpeg", name: "Raymond Huang", role: ""},
+        { image: "assets/Headshots/Xingchen Liu -ME.jpeg", name: "Xingchen Liu", role: ""}
     ],
-    description: "Separable, decoupled differential equations which describe gravitational, electromagnetic, and scalar perturbations of nonrotating (Schwarzschild) and rotating (Kerr) black holes have recently become available. Fortuitously, many interesting astrophysical processes near black"
+    description: ""
+};
+
+export const ADVISORS = {
+    members: [
+        { image: "assets/Headshots/Ilan Ben-Yaacov - EE Advisor.jpeg", name: "Ilan Ben-Yaacov", role: "EE Advisor"},
+    ],
+    description: ""
 };
 
 export const Electrical = {
     members: [
-        {image: "assets/cat.jpg", name: "Cat4", role: "Role4"},
-        {image: "assets/cat.jpg", name: "Cat5", role: "Role5"},
-        {image: "assets/cat.jpg", name: "Ca6", role: "Role6"}
+        
+        { image: "assets/Headshots/Rachel Reyes - EE.jpg", name: "Rachel Reyes", role: "Project Manager" },
+        { image: "assets/Headshots/Blake Diamond - EE.jpeg", name: "Blake Diamond", role: ""},
+        { image: "assets/Headshots/Evan Blasband - EE.jpeg", name: "Evan Blasband", role: "" },
+        { image: "assets/Headshots/Himangshu Chowdhury - EE.jpeg", name: "Himangshu Chowdhury", role: "" },
+        { image: "assets/Headshots/Huishan Chen - EE.jpeg", name: "Huishan Chen", role: "" },
+        { image: "assets/Headshots/Xiaowen Guo - EE.jpeg", name: "Xiaowen Guo", role: "" },
+        { image: "assets/Headshots/Xiaochang Liu - EE.jpeg", name: "Xiaochang Liu", role: "" },
     ],
-    description: "Separable, decoupled differential equations which describe gravitational, electromagnetic, and scalar perturbations of nonrotating (Schwarzschild) and rotating (Kerr) black holes have recently become"
+    description: ""
+};
+
+export const CE = {
+    members: [
+        { image: "assets/Headshots/Alex Jun - CE.jpg", name: "Alex Jun", role: "" },
+        { image: "assets/Headshots/Cameron Bijan - CE.jpeg", name: "Cameron Bijan", role: "" },
+        { image: "assets/Headshots/David Donaldson - CE.jpeg", name: "David Donaldson", role: "" },
+        { image: "assets/Headshots/Dylan Vanmali - CE.jpeg", name: "Dylan Vanmali", role: "" },
+
+    ],
+    description: ""
 };
 
 

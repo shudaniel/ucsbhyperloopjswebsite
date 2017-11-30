@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import Columns from 'react-columns'
-
+import MediaQuery from 'react-responsive';
 import './StaggeredCard.css'
 
 class StaggeredCard extends Component {
+
 
     constructor(props) {
         super(props);
@@ -13,7 +14,12 @@ class StaggeredCard extends Component {
 
     renderPicture(imageSrc) {
         return (
-            <div className="cardImage"><center><img src={imageSrc} style={{borderRadius: "10px"}} alt="Picture" width="300px" height="200px"/></center></div>
+            <div className="cardImage">
+                <br />
+                <center>
+                    <img src={imageSrc} />
+                </center>
+            </div>
 
             );
     }
@@ -30,21 +36,44 @@ class StaggeredCard extends Component {
         if (this.props.index % 2 == 0) {
             return (
                 <div className="staggeredCard">
-                    <Columns columns={2} gap="20px">
-                        {this.renderText(this.props.title, this.props.text)}
-                        {this.renderPicture(this.props.image)}
-                    </Columns>
+                    <MediaQuery query="(min-width: 700px)">
+                    
+                        <Columns columns={2} gap="20px">
+                            {this.renderText(this.props.title, this.props.text)}
+                            {this.renderPicture(this.props.image)}
+                        </Columns>
+                   
+                    </MediaQuery>
+                    <MediaQuery query="(max-width: 700px)">
+                   
+                        <Columns columns={1} gap="20px">
+                            {this.renderText(this.props.title, this.props.text)}
+                            {this.renderPicture(this.props.image)}
+                        </Columns>
+                    
+                    </MediaQuery>
                 </div>
                 );
         }
         else {
             return (
                 <div style={{backgroundColor: "rgb(239, 239, 239)"}} className="staggeredCard">
-                    <Columns columns={2} gap="20px">
-                        {this.renderPicture(this.props.image)}
-                        {this.renderText(this.props.title, this.props.text)}
+                    <MediaQuery query="(min-width: 700px)">
+                    
+                        <Columns columns={2} gap="20px">
+                            {this.renderPicture(this.props.image)}
+                            {this.renderText(this.props.title, this.props.text)}
                         
-                    </Columns>
+                        </Columns>
+                    </MediaQuery>
+                    <MediaQuery query="(max-width: 700px)">
+                        <Columns columns={1} gap="20px">
+                            {this.renderPicture(this.props.image)}
+                            {this.renderText(this.props.title, this.props.text)}
+
+                        </Columns>
+                   
+                    </MediaQuery>
                 </div>
             );
         }
