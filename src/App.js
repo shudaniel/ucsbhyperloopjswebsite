@@ -7,7 +7,8 @@ import StaggeredCard from './components/StaggeredCard/StaggeredCard'
 import NavBar from './components/NavBar/NavBar'
 import ImagesArray from './components/ImagesArray/ImagesArray'
 import Footer from './components/Footer/Footer'
-import { Mechanical, Electrical, CE, TEAM_IMAGES } from './constants';
+import { Mechanical, Electrical, CE, ADVISORS, TEAM_IMAGES } from './constants';
+
 import appStyles from './App.css'
 
 class App extends Component {
@@ -30,24 +31,23 @@ class App extends Component {
         <div className="main-body">
           <div className="bigblock" id="pod">
  
-            <StaggeredCard image="assets/TeamPhotos/Hyperloop (6 of 64).jpg" index="0" title="The Hyperloop Competition"
-                text="The Hyperloop Pod Competition is an event sponsored by SpaceX that is being held in Hawthorne, California where a number of student and non-student teams are participating to design—and for some, build—a subscale prototype transport vehicle to demonstrate technical feasibility of various aspects of the Hyperloop concept. The competitions have been open to participants globally, although all competitions and judging has occurred in the United States."
+            <StaggeredCard image="assets/TeamPhotos/Hyperloop (6 of 64).jpg" index="0" title="The Hyperloop Concept"
+               text="The Hyperloop is a new and futuristic mode of transportation proposed by Elon Musk in which a magnetically levitating pod is suspended in a low-pressure tube. Passengers or freight are loaded into the vehicle and accelerated to speeds nearly 200mph faster than that of a commercial jet. This means that a trip from San Francisco to LA - one that could take 7 hours or more by car – is now a 30 minute hyperloop ride!"
             />
-            <StaggeredCard image="assets/pod.jpg" index="1" title="Our Pod"
-                text="Lighter than dry pasta and deeply flavorful, fresh pasta isn't something to master in one go, but the end result is truly worthwhile. This particular recipe for an egg dough is vastly versatile. It can take on flavors from whole grain flours, saffron, herbs, or sauteed greens, or can be shaped into a number of different styles. And, with time and practice, what may have started as a cooking project may end up being the foundation for weeknight meals to come."
-            />
-            <StaggeredCard image="assets/cat.jpg" index="0" title="Section Title"
-                text="Lighter than dry pasta and deeply flavorful, fresh pasta isn't something to master in one go, but the end result is truly worthwhile. This particular recipe for an egg dough is vastly versatile. It can take on flavors from whole grain flours, saffron, herbs, or sauteed greens, or can be shaped into a number of different styles. And, with time and practice, what may have started as a cooking project may end up being the foundation for weeknight meals to come."
+            <StaggeredCard image="assets/hyperloop-competition.jpg" index="1" title="Hyperloop Competition"
+                text="SpaceX has built a mile-long enclosed test track as well as an open-air track at their facilities in Hawthorne, CA, and has been hosting an annual competition where university teams build prototype Hyperloop pods to race on these tracks. Last year’s UCSB Hyperloop team was a large group of determined undergraduate engineers working, levitating hyperloop pod as their senior design project. Of the several hundred colleges that applied to compete in the 2017 Hyperloop Competition at SpaceX, UCSB was one of 25 selected to attend the competition weekend."
             />
           </div>
           <div className="bigblock" id="team">
             <h1>Meet the Team</h1><br/>
+            
             <Profiles team={Mechanical} title="Mechanical Engineers"
             />
             <Profiles team={Electrical} title="Electrical Engineers"
             />
             <Profiles team={CE} title="Computer Engineers" />
-            
+            <Profiles team={ADVISORS} title="Advisors"
+            />
           </div>
           <div className="bigblock" id="sponsors">
             <h1>Our Sponsors</h1><br />

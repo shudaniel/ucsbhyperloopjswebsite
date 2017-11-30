@@ -14,7 +14,12 @@ class StaggeredCard extends Component {
 
     renderPicture(imageSrc) {
         return (
-            <div className="cardImage"><center><img src={imageSrc}/></center></div>
+            <div className="cardImage">
+                <br />
+                <center>
+                    <img src={imageSrc} />
+                </center>
+            </div>
 
             );
     }
