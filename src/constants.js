@@ -26,7 +26,7 @@ export const ADVISORS = {
 export const Electrical = {
     members: [
         
-        { image: "assets/Headshots/Rachel Reyes - EE.jpg", name: "Rachel Reyes", role: "Project Manager" },
+        { image: "assets/Headshots/Rachel Reyes - EE.jpg", name: "Rachel Reyes", role: "" },
         { image: "assets/Headshots/Blake Diamond - EE.jpeg", name: "Blake Diamond", role: ""},
         { image: "assets/Headshots/Evan Blasband - EE.jpeg", name: "Evan Blasband", role: "" },
         { image: "assets/Headshots/Himangshu Chowdhury - EE.jpeg", name: "Himangshu Chowdhury", role: "" },
@@ -101,11 +101,6 @@ export const TEAM_IMAGES =
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (10 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/Hyperloop (11 of 64).jpg",
             width: 3,
             height: 2
@@ -114,16 +109,6 @@ export const TEAM_IMAGES =
             src: "assets/TeamPhotos/Hyperloop (12 of 64).jpg",
             width: 3,
             height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (13 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (15 of 64).jpg",
-            width: 2,
-            height: 3
         },
         {
             src: "assets/TeamPhotos/Hyperloop (16 of 64).jpg",
@@ -156,11 +141,6 @@ export const TEAM_IMAGES =
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (26 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/Hyperloop (29 of 64).jpg",
             width: 3,
             height: 2
@@ -172,16 +152,6 @@ export const TEAM_IMAGES =
         },
         {
             src: "assets/TeamPhotos/Hyperloop (30 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (35 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (40 of 64).jpg",
             width: 3,
             height: 2
         },
@@ -216,47 +186,12 @@ export const TEAM_IMAGES =
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (56 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (57 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/Hyperloop (58 of 64).jpg",
             width: 3,
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (59 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (6 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (60 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (61 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/Hyperloop (62 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (63 of 64).jpg",
             width: 3,
             height: 2
         },
@@ -276,17 +211,7 @@ export const TEAM_IMAGES =
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (9 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/ilan.jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/pod alone 2.jpg",
             width: 3,
             height: 2
         },
