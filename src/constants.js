@@ -171,22 +171,12 @@ export const TEAM_IMAGES =
             height: 2
         },
         {
-            src: "assets/TeamPhotos/Hyperloop (5 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
             src: "assets/TeamPhotos/Hyperloop (51 of 64).jpg",
             width: 3,
             height: 2
         },
         {
             src: "assets/TeamPhotos/Hyperloop (55 of 64).jpg",
-            width: 3,
-            height: 2
-        },
-        {
-            src: "assets/TeamPhotos/Hyperloop (58 of 64).jpg",
             width: 3,
             height: 2
         },
@@ -225,9 +215,4 @@ export const TEAM_IMAGES =
             width: 3,
             height: 2
         },
-        {
-            src: "assets/TeamPhotos/team shot.jpg",
-            width: 3,
-            height: 2
-        }
     ];
