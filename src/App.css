@@ -15,6 +15,13 @@ h1 {
 	padding-right: 30px;
 }
 
+.fixed{
+	position: fixed;
+	bottom: 0;
+	height: 22px;
+    width:100%;
+}
+
 .footer {
     padding-top: 10px;
     padding-bottom: 10px;

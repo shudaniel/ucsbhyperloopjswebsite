@@ -10,7 +10,7 @@ class Footer extends Component {
 
     render() {
         return (
-            <div className = "sb-blue"><center><font color="white">
+            <div className = "sb-blue fixed"><center><font color="white">
             	Follow Us:&nbsp; 
             		<a href="https://www.facebook.com/ucsbhyperloop/"><font color="white">Facebook</font></a> 
             	&nbsp;|&nbsp;
