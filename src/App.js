@@ -7,7 +7,8 @@ import StaggeredCard from './components/StaggeredCard/StaggeredCard'
 import NavBar from './components/NavBar/NavBar'
 import ImagesArray from './components/ImagesArray/ImagesArray'
 import Footer from './components/Footer/Footer'
-import { Mechanical, Electrical, CE, ADVISORS, TEAM_IMAGES } from './constants';
+import Columns from 'react-columns'
+import { Mechanical, Electrical, CE, ADVISORS, TEAM_IMAGES, SPONSORS } from './constants';
 
 import appStyles from './App.css'
 
@@ -51,9 +52,15 @@ class App extends Component {
           </div>
           <div className="bigblock" id="sponsors">
             <h1>Our Sponsors</h1><br />
+              <div className="sponsors">
+                <ImagesArray imagesArray={SPONSORS} numColumns={4} />
+              </div>
           </div>
           <div className="bigblock" id="supportUs">
             <h1>Support Us</h1><br />
+            <p><center>
+              If you're interested in being a sponsor of this year's UCSB Hyperloop Team, please contact us at ucsbhyperloop@gmail.com. 
+            </center></p>
           </div>
           <div className="bigblock" id="gallery">
             <h1>Gallery</h1><br/>

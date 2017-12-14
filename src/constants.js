@@ -48,6 +48,50 @@ export const CE = {
     description: ""
 };
 
+export const SPONSORS = 
+    [
+        {
+            src: "assets/Sponsors/northrop.png",
+            width:2,
+            height: 1
+        },
+        {
+            src: "assets/Sponsors/laritech.png",
+            width:2,
+            height: 1
+        },
+        {
+            src: "assets/Sponsors/montecito.png",
+            width:2,
+            height: 1
+        },
+        {
+            src: "assets/Sponsors/ucsb-engineering.png",
+            width:2,
+            height: 1
+        },
+        {
+            src: "assets/Sponsors/ucsb-economics.png",
+            width:2,
+            height: 1
+        },
+        {
+            src: "assets/Sponsors/john-jacobs.png",
+            width:2,
+            height: 1
+        },
+        {
+            src: "assets/Sponsors/jonathan-siegel.png",
+            width:2,
+            height: 1
+        },
+        {
+            src: "assets/Sponsors/peter-carter.png",
+            width:2,
+            height: 1
+        }
+    ];
+
 
 export const TEAM_IMAGES =
     [
