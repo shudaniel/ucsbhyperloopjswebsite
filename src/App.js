@@ -58,9 +58,11 @@ class App extends Component {
           </div>
           <div className="bigblock" id="supportUs">
             <h1>Support Us</h1><br />
-            <p><center>
+              <center>
+            <p>
               If you're interested in being a sponsor of this year's UCSB Hyperloop Team, please contact us at ucsbhyperloop@gmail.com. 
-            </center></p>
+            </p>
+            </center>
           </div>
           <div className="bigblock" id="gallery">
             <h1>Gallery</h1><br/>
