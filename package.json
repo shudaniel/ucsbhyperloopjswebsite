@@ -26,10 +26,10 @@
     "webpack-dev-server": "^2.9.3"
   },
   "scripts": {
-    "start": "npm install yarn && yarn install && npm run server",
+    "start": "npm run server",
     "expressserver": "node server/index.js",
     "webpack": "./node_modules/.bin/webpack",
-    "server": "npm run webpack && npm run expressserver"
+    "server": "npm run expressserver"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
