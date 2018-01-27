@@ -58,11 +58,9 @@ class App extends Component {
           </div>
           <div className="bigblock" id="supportUs">
             <h1>Support Us</h1><br />
-              <center>
-            <p>
-              If you're interested in being a sponsor of this year's UCSB Hyperloop Team, please contact us at ucsbhyperloop@gmail.com. 
-            </p>
-            </center>
+            <p><center>
+              Please support us by donating <a href="https://gauchoboost.ucsb.edu/project/8953/wall">here</a>. If you have any questions or are interested in becoming a sponsor of this year's UCSB Hyperloop Team, contact us at ucsbhyperloop@gmail.com. 
+            </center></p>
           </div>
           <div className="bigblock" id="gallery">
             <h1>Gallery</h1><br/>
