@@ -39275,12 +39275,18 @@ var App = function (_Component) {
             ),
             _react2.default.createElement('br', null),
             _react2.default.createElement(
-              'center',
+              'p',
               null,
               _react2.default.createElement(
-                'p',
+                'center',
                 null,
-                'If you\'re interested in being a sponsor of this year\'s UCSB Hyperloop Team, please contact us at ucsbhyperloop@gmail.com.'
+                'Please support us by donating ',
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://gauchoboost.ucsb.edu/project/8953/wall' },
+                  'here'
+                ),
+                '. If you have any questions or are interested in becoming a sponsor of this year\'s UCSB Hyperloop Team, contact us at ucsbhyperloop@gmail.com.'
               )
             )
           ),
