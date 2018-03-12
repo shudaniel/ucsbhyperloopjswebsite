@@ -11,7 +11,9 @@ export const Mechanical = {
         { image: "assets/Headshots/Nate Rudolph - ME.jpeg", name: "Nate Rudolph", role: "" },
         { image: "assets/Headshots/Wesley Carias - ME.jpeg", name: "Wesley Carias", role: "" },
         { image: "assets/Headshots/Zhijiong(Raymond) Huang -ME.jpeg", name: "Raymond Huang", role: ""},
-        { image: "assets/Headshots/Xingchen Liu -ME.jpeg", name: "Xingchen Liu", role: ""}
+        { image: "assets/Headshots/Xingchen Liu -ME.jpeg", name: "Xingchen Liu", role: ""},
+        { image: "assets/Headshots/Pedro May-ME.png", name: "Pedro May", role: ""},
+
     ],
     description: ""
 };
